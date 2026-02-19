@@ -15,7 +15,7 @@ model = pickle.load(open("heart_model.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
 
 # Load dataset just to get column names (optional)
-# df = pd.read_csv("/content/health_data.csv")
+df = pd.read_csv("health_data.csv")
 # X_columns = df.drop("cardio", axis=1).columns
 X_columns = [
     'age', 'gender', 'height', 'weight', 'ap_hi', 'ap_lo',
